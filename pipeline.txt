@@ -1,9 +1,10 @@
 node{
-
+    stage('Stage 1'){
     
      DisplayName()
-   
 }
+}
+
 
 // All Groovy Methods goes here ;define all your groovy method here and then call one by one as required in above steps:
 
