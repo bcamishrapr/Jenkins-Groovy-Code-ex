@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+        // to run this job when mail-project job becomes successful.
+        triggers { upstream(upstreamProjects: 'mail-project', threshold: hudson.model.Result.SUCCESS) }
+    
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
